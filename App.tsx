@@ -55,7 +55,10 @@ function Section({children, title}: SectionProps): React.JSX.Element {
   );
 }
 
+let index = 0;
+
 function App(): React.JSX.Element {
+  console.log('index: ', index++);
   const isDarkMode = useColorScheme() === 'dark';
 
   const backgroundStyle = {
